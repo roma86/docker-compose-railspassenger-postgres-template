@@ -2,8 +2,11 @@
 
 **Database:** postgres
 
-**Application server:** Puma
+**Application server:** Phusion Passenger
 
+####Note:
+
+Stack is configured for an single app
 
 ##Usage
 
@@ -13,6 +16,11 @@
 - Check Gemfile
 - Check Dockerfile
 - Check dockerp-compose.yml
+- Check nginx configs:
+  + webapp.conf
+  + secret_key.conf
+  + gzip_max.conf
+  + postgres-env.conf
 - Inside project dir run:
   ```bash
 
